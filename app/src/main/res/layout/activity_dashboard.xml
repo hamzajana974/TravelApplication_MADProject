@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/margin"
+            android:src="@drawable/travellogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel App"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mid"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_user"
+            style="@style/txtheading"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+      android:padding="30dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+
+            android:id="@+id/btn_exploretour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edHeight"
+            android:layout_marginVertical="@dimen/margin"
+            android:text="Explore tour"
+            android:textSize="@dimen/text"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+
+
+            />
+        <Button
+            android:id="@+id/btn_addtour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edHeight"
+            android:layout_marginVertical="@dimen/margin"
+            android:text="Add Tour"
+            android:textSize="@dimen/text"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/btn_signout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edHeight"
+            android:layout_marginVertical="@dimen/margin"
+            android:text="Sign Out"
+            android:textSize="@dimen/text"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

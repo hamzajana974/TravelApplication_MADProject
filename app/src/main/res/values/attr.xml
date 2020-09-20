@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<attr name="colorPrimary" format="reference|color"/>
+    <attr name="colorDark" format="reference|color"/>
+    <attr name="colorAccent" format="reference|color"/>
+    <attr name="bgScreencolor" format="reference|color"/>
+    <attr name="headerColor" format="reference|color"/>
+    <attr name="TextColor" format="reference|color"/>
+    <attr name="btnColor" format="reference|color"/>
+    <attr name="btnTextColor" format="reference|color"/>
+
+</resources>

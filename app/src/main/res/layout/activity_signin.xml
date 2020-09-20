@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Signin">
+
+    <LinearLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/margin"
+            android:src="@drawable/travellogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel App"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="@dimen/heading"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editbox"
+            android:layout_marginVertical="@dimen/margin"
+            android:hint="@string/txtmail"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/editbox"
+            android:layout_marginVertical="@dimen/margin"
+            android:hint="@string/txtpass"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btn"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text"
+            android:layout_marginVertical="@dimen/margin"
+            />
+        <TextView
+            android:id="@+id/acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account?"
+            />
+        <TextView
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Sign up here"
+            android:textColor="@color/colorPrimary" />
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

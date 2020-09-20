@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Signup">
+
+        <LinearLayout
+            android:id="@+id/signupheader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/margin"
+                android:src="@drawable/travellogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel App"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/signupheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:padding="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading"
+                android:text="@string/signup"
+                android:layout_marginVertical="@dimen/margin"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+            <EditText
+                android:id="@+id/ed_Fname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:hint="@string/fn"
+                android:singleLine="true"
+                android:background="@drawable/editbox"
+
+                />
+            <EditText
+                android:id="@+id/ed_Lname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:hint="@string/ln"
+                android:singleLine="true"
+                android:background="@drawable/editbox"
+
+
+                />
+            <EditText
+                android:id="@+id/ed_Email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:hint="@string/mail"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="@drawable/editbox"
+
+
+                />
+            <EditText
+                android:id="@+id/ed_Number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:hint="@string/MobNo"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/editbox"
+                />
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:background="@drawable/editbox"
+                />
+            <EditText
+                android:id="@+id/ed_conpass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:background="@drawable/editbox"
+                />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edHeight"
+                android:layout_marginVertical="@dimen/margin"
+                android:text="Sign up"
+                android:textSize="@dimen/text"
+                android:background="@drawable/btn"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>

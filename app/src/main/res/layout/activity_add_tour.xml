@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTour">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".addTour"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/travel"
+                android:layout_margin="@dimen/margin"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header"
+                android:text="Travel App"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/addtour"
+                android:textSize="@dimen/heading" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Title"
+                android:textSize="@dimen/text" />
+
+            <EditText
+                android:id="@+id/ed_title"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/margin"
+                android:background="@drawable/editbox"
+                android:gravity="top"
+                android:hint="Briefly describe your tour"
+                android:inputType="text|textMultiLine"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Details"
+                android:textSize="@dimen/text" />
+
+            <EditText
+                android:id="@+id/ed_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="@dimen/margin"
+                android:background="@drawable/editbox"
+                android:gravity="top"
+                android:hint="Describe details of your tour. Describe what's intresting in your pakage."
+                android:inputType="text|textMultiLine"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cost per head"
+                android:textSize="@dimen/text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ed_mincost"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/edHeight"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:background="@drawable/editbox"
+                    android:hint="Min Cost"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/ed_maxcost"
+                    android:layout_width="180dp"
+                    android:layout_height="@dimen/edHeight"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:background="@drawable/editbox"
+                    android:hint="Max Cost"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/one-l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Departure"
+                        android:textSize="@dimen/text" />
+
+                    <EditText
+
+                        android:id="@+id/ed_depart"
+                        android:layout_width="180dp"
+                        android:layout_height="@dimen/edHeight"
+                        android:background="@drawable/editbox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two-l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Destination"
+                        android:textSize="@dimen/text" />
+
+                    <EditText
+                        android:id="@+id/ed_dest"
+                        android:layout_width="180dp"
+                        android:layout_height="@dimen/edHeight"
+                        android:background="@drawable/editbox" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tour Start Date"
+                        android:textSize="@dimen/text" />
+
+                    <EditText
+                        android:id="@+id/ed_sdate"
+                        android:layout_width="180dp"
+                        android:layout_height="@dimen/edHeight"
+                        android:background="@drawable/editbox"
+                        android:ems="10"
+                        android:hint="DD-MM-YYYY"
+                        android:inputType="date"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tour End Date"
+                        android:textSize="@dimen/text" />
+
+                    <EditText
+                        android:id="@+id/ed_edate"
+                        android:layout_width="180dp"
+                        android:layout_height="@dimen/edHeight"
+                        android:background="@drawable/editbox"
+                        android:ems="10"
+                        android:hint="DD-MM-YYYY"
+                        android:inputType="date"
+                        android:maxLength="10" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No of seats"
+                        android:textSize="@dimen/text" />
+
+                    <EditText
+                        android:id="@+id/ed_seats"
+                        android:layout_width="180dp"
+                        android:layout_height="@dimen/edHeight"
+                        android:background="@drawable/editbox"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Only Adults?"
+                        android:textSize="@dimen/text" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edHeight"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/adYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/edHeight"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/adNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/edHeight"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="NO" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnHeight"
+                android:background="@drawable/btn"
+                android:text="ADD TOUR"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

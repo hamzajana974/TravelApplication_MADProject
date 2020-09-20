@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">travelApp</string>
+    <string name="txtSplashHeader">MAD Project</string>
+    <string name="txtSplashAppnam">Travel AppLIcation</string>
+    <string name="txtSplashFooter">Muhammad Hashir Siddique -- 41594 \n Muhammad Hamza -- 38180</string>
+    <string name="txtmail">Email address</string>
+    <string name="txtpass">Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Log in</string>
+    <string name="addtour">Add Tour</string>
+
+    <string name="fn">Enter First Name</string>
+    <string name="ln">Enter Last Name</string>
+    <string name="mail">Enter Email Address</string>
+    <string name="MobNo">Enter Mobile Numer</string>
+    <string name="pass">Enter Password</string>
+    <string name="Conpass">Confirmed Password</string>
+
+</resources>

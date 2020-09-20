@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splashHeading">60dp</dimen>
+    <dimen name="splashFooter">24dp</dimen>
+    <dimen name="header">50dp</dimen>
+    <dimen name="heading">40dp</dimen>
+    <dimen name="text">20dp</dimen>
+    <dimen name="edHeight">45dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="month">30dp</dimen>
+    <dimen name="btnHeight">50dp</dimen>
+
+
+</resources>
